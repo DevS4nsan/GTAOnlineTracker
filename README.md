@@ -3,7 +3,6 @@
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 La herramienta definitiva hecha para los coleccionistas de GTA Online. Gestiona tus propiedades y vehículos con una interfaz moderna y acogedora.
 
@@ -26,11 +25,6 @@ Puedes encontrar los ejecutables para todas las plataformas en la sección de [*
 1. Descarga el archivo `.zip` para Windows.
 2. Extrae el contenido y ejecuta `gtaonlinetracker.exe`.
    *(Nota: Es posible que Windows SmartScreen dé un aviso al ser un desarrollador independiente).*
-
-### 🐧 Linux
-1. Descarga el binario para Linux.
-2. Dale permisos de ejecución: `chmod +x gtaonlinetracker`.
-3. ¡Ejecuta y listo!
 
 ### 📱 Android
 1. Descarga el `app-release.apk`.
