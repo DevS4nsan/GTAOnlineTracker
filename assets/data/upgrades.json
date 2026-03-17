@@ -1,0 +1,81 @@
+[
+  {
+    "id": "upg_ceo_gar1",
+    "propertyType": "Executive Offices",
+    "name": "Office Garage 1",
+    "addedCapacity": 20,
+    "price": 1150000
+  },
+  {
+    "id": "upg_ceo_gar2",
+    "propertyType": "Executive Offices",
+    "name": "Office Garage 2",
+    "addedCapacity": 20,
+    "price": 855000
+  },
+  {
+    "id": "upg_ceo_gar3",
+    "propertyType": "Executive Offices",
+    "name": "Office Garage 3",
+    "addedCapacity": 20,
+    "price": 745000
+  },
+  {
+    "id": "upg_nightclub_b2",
+    "propertyType": "Nightclubs",
+    "name": "Sótano de Garaje 2",
+    "addedCapacity": 10,
+    "price": 800000
+  },
+  {
+    "id": "upg_nightclub_b3",
+    "propertyType": "Nightclubs",
+    "name": "Sótano de Garaje 3",
+    "addedCapacity": 10,
+    "price": 800000
+  },
+  {
+    "id": "upg_nightclub_b4",
+    "propertyType": "Nightclubs",
+    "name": "Sótano de Garaje 4",
+    "addedCapacity": 10,
+    "price": 800000
+  },
+  {
+    "id": "upg_moc_storage",
+    "propertyType": "Large Vehicle Properties",
+    "targetVehicle": "trailerlarge",
+    "name": "Personal Vehicle Storage",
+    "addedCapacity": 1,
+    "price": 195000
+  },
+  {
+    "id": "upg_avenger_storage",
+    "propertyType": "Large Vehicle Properties",
+    "targetVehicle": "mammoth_avenger",
+    "name": "Personal Vehicle Storage",
+    "addedCapacity": 1,
+    "price": 195000
+  },
+  {
+    "id": "upg_casino_garage",
+    "propertyType": "Casino Penthouse",
+    "name": "Penthouse Garage",
+    "addedCapacity": 10,
+    "price": 900000
+  },
+  {
+    "id": "upg_arena_garage_b1",
+    "propertyType": "Arena Workshop",
+    "name": "Arena Garage B1",
+    "addedCapacity": 10,
+    "price": 195000
+  },
+  {
+    "id": "upg_arena_garage_b2",
+    "propertyType": "Arena Workshop",
+    "name": "Arena Garage B2",
+    "addedCapacity": 10,
+    "price": 265000
+  }
+]

@@ -1,0 +1,135 @@
+name: gtaonlinetracker
+description: "Tracker de propiedades y vehiculos para jugadores de GTA Online"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  intl: ^0.20.2
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  sqflite_common_ffi: ^2.3.0
+  shared_preferences: ^2.5.4
+  share_plus: ^10.1.0
+  file_picker: ^8.1.0
+  url_launcher: ^6.3.2
+  flutter_svg: ^2.2.4
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+
+  generate: true
+  uses-material-design: true
+  assets:
+      - assets/
+      - assets/data/
+      - assets/icons/
+      - assets/images/
+      - assets/launcher/
+      - assets/logos/
+      - assets/vehicles/
+      - assets/vehicles/arena/
+      - assets/vehicles/bennys/
+      - assets/vehicles/bennys/conversion/
+      - assets/vehicles/docktease/
+      - assets/vehicles/elitas/
+      - assets/vehicles/lm/
+      - assets/vehicles/notAvailable/
+      - assets/vehicles/notAvailable/lm/
+      - assets/vehicles/notAvailable/ssasa/
+      - assets/vehicles/notAvailable/warstock/
+      - assets/vehicles/pedal/
+      - assets/vehicles/special/
+      - assets/vehicles/special/acidLab/
+      - assets/vehicles/special/arenaRewards/
+      - assets/vehicles/special/bdb/
+      - assets/vehicles/special/bunker/
+      - assets/vehicles/special/careerProgress/
+      - assets/vehicles/special/casinoMissions/
+      - assets/vehicles/special/casinoReward/
+      - assets/vehicles/special/club/
+      - assets/vehicles/special/moc/
+      - assets/vehicles/special/onlyStolen/
+      - assets/vehicles/ssasa/
+      - assets/vehicles/warstock/
+      - assets/manufacturers/
+      - assets/props/
+      - assets/props/agencies/
+      - assets/props/apartments/
+      - assets/props/arcades/
+      - assets/props/arena/
+      - assets/props/bottomdollar/
+      - assets/props/bunkers/
+      - assets/props/eclipseblvd/
+      - assets/props/facilities/
+      - assets/props/garages/
+      - assets/props/garment/
+      - assets/props/gta+/
+      - assets/props/hangars/
+      - assets/props/mansions/
+      - assets/props/mc/
+      - assets/props/mc/business/
+      - assets/props/mc/business/coca/
+      - assets/props/mc/business/docs/
+      - assets/props/mc/business/mari/
+      - assets/props/mc/business/meta/
+      - assets/props/mc/business/money/
+      - assets/props/mc//headquarters/
+      - assets/props/moneyfronts/
+      - assets/props/nightclubs/
+      - assets/props/offices/
+      - assets/props/penthouse/
+      - assets/props/salvageyards/
+      - assets/props/storymode/
+      - assets/props/taller/
+      - assets/props/warehouses/
+      - assets/props/warehouses/cargo/
+      - assets/props/warehouses/vehicle/
+      - assets/props/yachts/
+
+  fonts:
+    - family: Pricedown
+      fonts:
+        - asset: assets/fonts/PricedownBl.otf
+    - family: Chalet
+      fonts:
+        - asset: assets/fonts/Chalet.otf
+    - family: HouseScript
+      fonts:
+        - asset: assets/fonts/HouseScript.ttf
+    - family: ScienceGothic
+      fonts:
+        - asset: assets/fonts/ScienceGothic.ttf
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  web:
+    generate: true
+    image_path: "assets/launcher/icon.png"
+  windows:
+    generate: true
+    image_path: "assets/launcher/icon.png"
+    icon_size: 256
+  macos:
+    generate: true
+    image_path: "assets/launcher/icon.png"
+  linux:
+    generate: true
+    image_path: "assets/launcher/icon.png"
+  image_path: "assets/launcher/icon.png"

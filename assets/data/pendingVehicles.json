@@ -1,0 +1,44 @@
+[
+    {
+        "id": "bravado_polbuffalo6",
+        "name": "Buffalo STX de persecución",
+        "displayName": {
+            "es": "Buffalo STX de persecución",
+            "en": "Buffalo STX de persecución"
+        },
+        "manufacturer": "Bravado",
+        "category": "Emergency",
+        "dlc": "mp2025_02",
+        "price": 0,
+        "image": "assets/vehicles/warstock/polbuffalo6.jpg",
+        "isRemoved": false,
+        "obtaining": [
+            "warstock"
+        ],
+        "imaniTech": null,
+        "weaponry": null,
+        "extras": null,
+        "storageType": "garage"
+    },
+    {
+        "id": "bravado_polbuffalo7",
+        "name": "Buffalo Cruiser",
+        "displayName": {
+            "es": "Buffalo Cruiser",
+            "en": "Buffalo Cruiser"
+        },
+        "manufacturer": "Bravado",
+        "category": "Emergency",
+        "dlc": "mp2025_02",
+        "price": 0,
+        "image": "assets/vehicles/warstock/polbuffalo7.jpg",
+        "isRemoved": false,
+        "obtaining": [
+            "warstock"
+        ],
+        "imaniTech": null,
+        "weaponry": null,
+        "extras": null,
+        "storageType": "garage"
+    }
+]
