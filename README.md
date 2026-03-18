@@ -1,4 +1,4 @@
-# GTA Online Car Tracker v1.0
+# GTA Online Car Tracker v1.0.1
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
@@ -27,8 +27,38 @@ Puedes encontrar los ejecutables para todas las plataformas en la sección de [*
    *(Nota: Es posible que Windows SmartScreen dé un aviso al ser un desarrollador independiente).*
 
 ### 📱 Android
-1. Descarga el `app-release.apk`.
+1. Descarga el APK correspondiente a tu arquitectura (se recomienda arm64-v8a para la mayoría de móviles modernos, si desconoces tu arquitectura, simplemente descarga `app-release.apk`).
 2. Permite la instalación de fuentes desconocidas en tu dispositivo.
+
+---
+
+### Instrucciones de Actualización
+
+| ¡No pierdas tu progreso! Sigue estos pasos según tu plataforma:
+
+* Android: No es necesario desinstalar nada. Descarga el nuevo APK e instálalo; el sistema reconocerá la actualización y tus datos se mantendrán intactos.
+
+* Windows: Debido a cómo se gestionan los archivos portátiles, ES NECESARIO realizar un respaldo de tus datos antes de pasar a la nueva versión:
+
+* Ve a Configuración > Exportar Progreso (Backup) y exporta tu archivo JSON.
+* Borra la carpeta vieja y extrae la nueva versión.
+* Abre la app e importa tu archivo de respaldo.
+
+
+> [!IMPORTANT]
+> **Proceso de Actualización Visual:** Mira las capturas de pantalla a continuación para asegurar que tu imperio criminal pase a la v1.0.1 sin contratiempos.
+
+![Screen 1](readmeSrc/update/1.png)
+
+![Screen 1](readmeSrc/update/2.png)
+
+![Screen 1](readmeSrc/update/3.png)
+
+![Screen 1](readmeSrc/update/4.png)
+
+![Screen 1](readmeSrc/update/5.png)
+
+![Screen 1](readmeSrc/update/6.png)
 
 ---
 
