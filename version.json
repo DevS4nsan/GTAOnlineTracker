@@ -1,7 +1,7 @@
 {
-  "version": "1.0.1",
+  "latest_version": "1.0.1",
   "build_number": 3,
   "release_date": "2026-03-16",
-  "url": "https://github.com/DevS4nsan/GTAOnlineTracker/releases",
-  "notes": "Hotfix: Añadida la mejora de garaje al negocio de maquinitas, corrección de error de vehiculos en el limbo y muestreo correcto de categorias de propiedades en el modal de la lista de propiedades"
+  "download_url": "https://github.com/DevS4nsan/GTAOnlineTracker/releases",
+  "release_notes": "Hotfix: Añadida la mejora de garaje al negocio de maquinitas, corrección de error de vehiculos en el limbo y muestreo correcto de categorias de propiedades en el modal de la lista de propiedades"
 }

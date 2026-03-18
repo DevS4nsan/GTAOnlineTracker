@@ -13,7 +13,7 @@ import '../database/database_helper.dart';
 import 'package:http/http.dart' as http;
 import 'package:url_launcher/url_launcher.dart';
 
-const String CURRENT_APP_VERSION = "1.0.0";
+const String CURRENT_APP_VERSION = "1.0.1";
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
