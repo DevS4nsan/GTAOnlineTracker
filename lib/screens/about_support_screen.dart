@@ -286,7 +286,7 @@ class AboutSupportScreen extends StatelessWidget {
         _buildContactItem(
           Icons.bug_report,
           "Reportar un bug",
-          () => _showContactOptions(context, "Reporte de Bug - V1.0.0"),
+          () => _showContactOptions(context, "Reporte de Bug - V1.0.1"),
           isDesktop,
         ),
         _buildContactItem(

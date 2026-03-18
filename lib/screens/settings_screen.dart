@@ -45,14 +45,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Future<void> _silentCheckForUpdates() async {
     try {
       final url = Uri.parse(
-        'https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/version.json',
+        'https://raw.githubusercontent.com/DevS4nsan/GTAOnlineTracker/refs/heads/main/version.json',
       );
       final response = await http.get(url).timeout(const Duration(seconds: 5));
 
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
-        if (data['latest_version'] != "1.0.0") {
-          // Tu versión actual
+        if (data['latest_version'] != "1.0.1") {
           if (mounted) {
             setState(() {
               _updateAvailable = true;
@@ -299,7 +298,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           _buildSettingsTile(
             icon: Icons.info_outline,
             title: "Versión de la Aplicación",
-            subtitle: "v1.0.0 (Toca para opciones)",
+            subtitle: "v1.0.1 (Toca para opciones)",
             trailing: Text(
               _updateAvailable ? "ACTUALIZACIÓN DISPONIBLE" : "ACTUALIZADA",
               style: TextStyle(
