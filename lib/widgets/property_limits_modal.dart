@@ -4,6 +4,36 @@ import '../utils/game_rules.dart';
 class PropertyLimitsModal extends StatelessWidget {
   final Map<String, int> ownedCounts;
   final Set<String> ownedMCSubtypes;
+  static const Map<String, String> propertyTranslations = {
+    'All': 'Todas',
+    'Agencies': 'Agencias',
+    'Apartments': 'Apartamentos',
+    'Arena Workshop': 'Taller de la Arena',
+    'Auto Shops': 'Talleres',
+    'Bail Enforcement': 'Oficina de Fianzas',
+    'Bunkers': 'Búnkeres',
+    'Casino Penthouse': 'Penthouse del Casino',
+    'Executive Offices': 'Oficinas',
+    'Facilities': 'Instalaciones',
+    'GTA + Exclusive': 'Exclusivo de GTA +',
+    'Garages': 'Garajes',
+    'Garment Factory': 'Fábrica Textil',
+    'Hangars': 'Hangares',
+    'Large Vehicle Properties': 'Vehículos de gran Tamaño',
+    'MC Clubhouses': 'Sedes del Club de Moteros',
+    'MC Businesses': 'Negocios del Club de Moteros',
+    'Mansions': 'Mansiones',
+    'Money Fronts': 'Empresas Tapaderas',
+    'Nightclubs': 'Clubes nocturnos',
+    'Retro Arcades': 'Negocios de Maquinitas',
+    'Salvage Yards': 'Deshuesaderos',
+    'Special Cargo Warehouses': 'Almacenes de Mercancía Especial',
+    'Story Mode Properties': 'Propiedades de Modo Historia',
+    'Vehicle Warehouses': 'Almacenes de Vehículos',
+    'Yachts': 'Yates',
+    'Eclipse Blvd Garage': 'Garaje de Eclipse Blvd',
+    'Apartments & Garages': 'Apartamentos y Garajes',
+  };
 
   const PropertyLimitsModal({
     super.key, 
@@ -49,10 +79,11 @@ class PropertyLimitsModal extends StatelessWidget {
               itemCount: categories.length,
               itemBuilder: (context, index) {
                 final category = categories[index];
+                final translatedName = propertyTranslations[category] ?? category;
                 final limit = GameRules.propertyLimits[category]!;
                 final owned = ownedCounts[category] ?? 0;
                 final isMaxed = owned >= limit;
-                Widget categoryRow = _buildMainRow(category, owned, limit, isMaxed);
+                Widget categoryRow = _buildMainRow(translatedName, owned, limit, isMaxed);
                 if (category == 'MC Businesses') {
                   return Column(
                     children: [

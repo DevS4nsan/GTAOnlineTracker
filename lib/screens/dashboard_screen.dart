@@ -136,7 +136,7 @@ class _DashboardPageState extends State<DashboardPage> {
       return;*/
 
       final url = Uri.parse(
-        'https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/version.json',
+        'https://raw.githubusercontent.com/DevS4nsan/GTAOnlineTracker/refs/heads/main/version.json',
       );
       final response = await http.get(url).timeout(const Duration(seconds: 5));
 

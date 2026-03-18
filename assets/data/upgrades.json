@@ -77,5 +77,12 @@
     "name": "Arena Garage B2",
     "addedCapacity": 10,
     "price": 265000
+  },
+  {
+    "id": "upg_arcade_garage",
+    "propertyType": "Retro Arcades",
+    "name": "Retro Arcade Garage",
+    "addedCapacity": 10,
+    "price": 215000
   }
 ]

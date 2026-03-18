@@ -3,7 +3,7 @@ description: "Tracker de propiedades y vehiculos para jugadores de GTA Online"
 
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ^3.11.0

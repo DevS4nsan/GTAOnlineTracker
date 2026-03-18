@@ -892,29 +892,35 @@ class DatabaseHelper {
     return await db.query('owned_properties', where: 'isVirtual = 1');
   }
 
-  Future<void> assignVehicleToSlot(
-    String propertyId,
-    int ownedVehicleId,
-    int slotNumb,
-  ) async {
-    final db = await instance.database;
+Future<void> assignVehicleToSlot(
+  String propertyId,
+  int ownedVehicleId,
+  int slotNumb,
+) async {
+  final db = await instance.database;
 
-    final propRow = await db.query(
-      'owned_properties',
-      where: 'idProp = ?',
-      whereArgs: [propertyId],
-      limit: 1,
-    );
+  final propRow = await db.query(
+    'owned_properties',
+    where: 'idProp = ?',
+    whereArgs: [propertyId],
+    limit: 1,
+  );
 
-    if (propRow.isEmpty) return;
-    final int idOProp = propRow.first['id'] as int;
+  if (propRow.isEmpty) return;
+  final int idOProp = propRow.first['id'] as int;
 
-    await db.insert('ownedVehicles_properties', {
-      'idOVeh': ownedVehicleId,
-      'idOProp': idOProp,
-      'slotNumb': slotNumb,
-    }, conflictAlgorithm: ConflictAlgorithm.replace);
-  }
+  await db.delete(
+    'ownedVehicles_properties',
+    where: 'idOProp = ? AND slotNumb = ?',
+    whereArgs: [idOProp, slotNumb],
+  );
+
+  await db.insert('ownedVehicles_properties', {
+    'idOVeh': ownedVehicleId,
+    'idOProp': idOProp,
+    'slotNumb': slotNumb,
+  });
+}
 
   Future<void> removeVehicleFromSlot(String propertyId, int slotNumb) async {
     final db = await instance.database;
